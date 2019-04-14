@@ -1,28 +1,50 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view/>
+    <Footer/>
   </div>
 </template>
+<style lang="scss">
 
+  @import 'scss/variables';
+
+  #app{
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-height: 100%;
+    header{
+      width:100vw;
+      height:$header_height;
+    }
+    main{
+      flex-grow: 1;
+      
+    }
+
+    &> footer{
+      color:rgb(100, 120, 122);
+    }
+  }
+  body{
+    margin:0;
+    height:100vh;
+    width:100vw;
+    font-family: $fonts;
+    overflow-x:hidden;
+    font-size:$font_size;
+    color:$color;
+    background-color:$bgcolor;
+  }
+</style>
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Footer from "@/components/Footer"
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  name:"app",
+  components:{
+    Footer
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+
