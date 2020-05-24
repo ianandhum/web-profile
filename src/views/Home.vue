@@ -5,7 +5,7 @@
         <h1>Hi, I'm <strong>Anandhu</strong></h1>
       </header>
       <section>
-        <h2 class="eye-catch">I think I'm a developer</h2>
+        <h2 class="eye-catch">Passion = 👨🏽‍💻</h2>
       </section>
       <section class="links">
           <a v-for="profile in profiles" v-bind:key="profile.id" v-bind:href="profile.link" class="link">
@@ -22,23 +22,24 @@
     width:100vw;
     display: flex;
     flex-direction: column;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   header{
     margin-top:30vh;
     h1{
       text-align:center;
-      font-weight: 300;
     }
     
   }
   section{
-    h2.eye-catch{
-      font-size: 3em;
+    h2.eye-catch {
+      font-size: 5em;
       font-weight: 200;
+      margin :0;
       text-align: center;
     }
   }
-  section.links{
+  section.links {
     display: flex;
     justify-content: center;
   }
