@@ -18,6 +18,8 @@
 </template>
 
 <style lang="scss" scoped>
+
+  @import '../scss/variables';
   main{
     width:100vw;
     display: flex;
@@ -55,15 +57,15 @@
           -webkit-border-radius: 50%;
           -o-border-radius: 50%;
           -ms-border-radius: 50%;
-          border:2px solid #fff;
+          border:2px solid $color;
           height:50px;
           width:50px;
           background-size: cover;
           background-origin: center center;
-          background-color:#fff;
+          background-color:$color;
       }
       .link-text{
-          color:#000;
+          color:$bgcolor;
           text-align: center;
           margin-top:8px;
       }
