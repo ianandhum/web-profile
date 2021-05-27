@@ -62,7 +62,7 @@
           width:50px;
           background-size: cover;
           background-origin: center center;
-          background-color:$bgcolor;
+          background-color:#fff;
       }
       .link-text{
           color:$color;
