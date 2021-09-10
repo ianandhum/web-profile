@@ -82,19 +82,19 @@ export default {
       profiles:[
         {
           id:1,
-          link:"https://dev.to/anandhumanoj",
+          link:"https://dev.to/ianandhum",
           icon:"/static/devto.png",
           text:"Dev.to"
         },
         {
           id:2,
-          link:"https://linkedin.com/in/anandhumanoj",
+          link:"https://linkedin.com/in/ianandhum",
           icon:"/static/ln.png",
           text:"LinkedIn"
         },
         {
           id:3,
-          link:"https://github.com/anandhumanoj",
+          link:"https://github.com/ianandhum",
           icon:"/static/github.svg",
           text:"Github"
         }
