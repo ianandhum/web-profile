@@ -5,7 +5,7 @@
         <h1>Hi, I'm <strong>Anandhu</strong></h1>
       </header>
       <section>
-        <h2 class="eye-catch">Passion = 👨🏽‍💻</h2>
+        <h2 class="eye-catch"><sup>focusing on:</sup>🌐👨🏽‍💻&nbsp;&nbsp;&nbsp;&nbsp;<sup>intersted in:</sup>🧪⚛🌌🚀</h2>
       </section>
       <section class="links">
           <a v-for="profile in profiles" v-bind:key="profile.id" v-bind:href="profile.link" class="link">
@@ -24,21 +24,28 @@
     width:100vw;
     display: flex;
     flex-direction: column;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Courier New', Courier, monospace
   }
   header{
     margin-top:30vh;
+    padding:50px 0;
     h1{
       text-align:center;
     }
     
   }
   section{
+    padding: 10px 0;
+
     h2.eye-catch {
-      font-size: 5em;
-      font-weight: 200;
+      font-size: 3em;
+      font-weight: 400;
       margin :0;
       text-align: center;
+    }
+
+    h2.eye-catch sup {
+      font-size: 0.4em;
     }
   }
   section.links {
@@ -74,7 +81,6 @@
 
 
 <script>
-
 export default {
   name: 'home',
   data:function(){
