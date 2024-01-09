@@ -1,5 +1,10 @@
+
+<script setup>
+import Footer from "@/components/Footer.vue"
+</script>
+
 <template>
-  <div id="app">
+  <div>
     <router-view/>
     <Footer/>
   </div>
@@ -37,14 +42,3 @@
     background-color:$bgcolor;
   }
 </style>
-<script>
-import Footer from "@/components/Footer"
-export default {
-  name:"app",
-  components:{
-    Footer
-  }
-}
-</script>
-
-
