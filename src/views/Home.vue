@@ -4,9 +4,6 @@
       <header>
         <h1>Hi, I'm <strong>Anandhu</strong></h1>
       </header>
-      <section>
-        <h2 class="eye-catch"><sup>focusing on:</sup>🌐👨🏽‍💻&nbsp;&nbsp;&nbsp;&nbsp;<sup>intersted in:</sup>🧪⚛🌌🚀</h2>
-      </section>
       <section class="links">
           <a v-for="profile in profiles" v-bind:key="profile.id" v-bind:href="profile.link" class="link">
               <div class="link-img" v-bind:style="{'background-image':'url('+profile.icon+')'}"></div>
@@ -17,15 +14,46 @@
   </main>
 </template>
 
+<script>
+export default {
+  data:function(){
+    return{
+      profiles:[
+        {
+          id:2,
+          link:"https://linkedin.com/in/ianandhum",
+          icon:"/static/ln.png",
+          text:"Linkedin"
+        },
+        {
+          id:3,
+          link:"https://github.com/ianandhum",
+          icon:"/static/github.svg",
+          text:"Github"
+        },
+        {
+          id:1,
+          link:"https://dev.to/ianandhum",
+          icon:"/static/devto.png",
+          text:"Dev.to"
+        }
+      ]
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 
   @import '../scss/variables';
+
   main{
     width:100vw;
     display: flex;
     flex-direction: column;
     font-family:'Courier New', Courier, monospace
   }
+
   header{
     margin-top:30vh;
     padding:50px 0;
@@ -34,20 +62,7 @@
     }
     
   }
-  section{
-    padding: 10px 0;
-
-    h2.eye-catch {
-      font-size: 3em;
-      font-weight: 400;
-      margin :0;
-      text-align: center;
-    }
-
-    h2.eye-catch sup {
-      font-size: 0.4em;
-    }
-  }
+  
   section.links {
     display: flex;
     justify-content: center;
@@ -78,34 +93,3 @@
       }
   }
 </style>
-
-
-<script>
-export default {
-  name: 'home',
-  data:function(){
-    return{
-      profiles:[
-        {
-          id:1,
-          link:"https://dev.to/ianandhum",
-          icon:"/static/devto.png",
-          text:"Dev.to"
-        },
-        {
-          id:2,
-          link:"https://linkedin.com/in/ianandhum",
-          icon:"/static/ln.png",
-          text:"LinkedIn"
-        },
-        {
-          id:3,
-          link:"https://github.com/ianandhum",
-          icon:"/static/github.svg",
-          text:"Github"
-        }
-      ]
-    }
-  }
-}
-</script>
